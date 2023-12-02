@@ -1,4 +1,4 @@
--module(day1).
+-module(day1_part1).
 
 -export([ file/1, reduce/1 ]).
 
@@ -35,7 +35,7 @@ to_integer([Last | Rest]) ->
 -include_lib("eunit/include/eunit.hrl").
 
 example_test() ->
-    ?assertEqual(?EXAMPLE_RESULT, file("example")).
+    ?assertEqual(?EXAMPLE_RESULT, file("part1_example")).
 
 input_test() ->
     ?assertEqual(?INPUT_RESULT, file("input")).
